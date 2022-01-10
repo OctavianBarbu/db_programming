@@ -3,7 +3,7 @@ import xlsxwriter
 
 
 def get_data(table):
-    db = mysql.connect(host="localhost", user="root", password="Superpuff001!", database="trainers")
+    db = mysql.connect(host="localhost", user="root", password="", database="trainers")
     with db.cursor() as c:
         c.execute("SELECT * FROM " + table)
         header = [row[0] for row in c.description]
