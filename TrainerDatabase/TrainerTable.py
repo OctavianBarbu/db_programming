@@ -10,7 +10,7 @@ from datetime import datetime
 # 3 parametrii: host , user, password
 def create_structure():
 
-    conn = mysql.connect(host="localhost", user='root', password='Superpuff001!', database='')
+    conn = mysql.connect(host="localhost", user='root', password='', database='')
     #cursor = conn.cursor() # creating an instance of 'cursor' class which is used to execute the SQL statements in python
     with conn.cursor() as c:
         c.execute("CREATE DATABASE IF NOT EXISTS trainers")
@@ -54,7 +54,7 @@ def show_menu2():
     print("7.Exit")
 
 create_structure()
-conn = mysql.connect(host="localhost", user='root', password='Superpuff001!', database='trainers')
+conn = mysql.connect(host="localhost", user='root', password='', database='trainers')
 
 
 user_logged = None
