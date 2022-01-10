@@ -6,7 +6,7 @@ def create_structure():
     conn = mysql.connect(
         host="localhost",
         user="root",
-        password="Superpuff001!",
+        password="",
         database="",
     )
 
@@ -45,7 +45,7 @@ def create_structure():
 
 create_structure()
 
-conn = mysql.connect(host="localhost", user='root', password='Superpuff001!', database='shop')
+conn = mysql.connect(host="localhost", user='root', password='', database='shop')
 
 def show_menu_1():
     print("1. Login")
