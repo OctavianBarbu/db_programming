@@ -4,7 +4,7 @@ from datetime import datetime
 
 def create_structure():
 
-    conn = mysql.connect(host="localhost", user='root', password='Superpuff001!', database='')
+    conn = mysql.connect(host="localhost", user='root', password='', database='')
     with conn.cursor() as c:
         c.execute("CREATE DATABASE IF NOT EXISTS db_tasks")
         c.execute('''CREATE TABLE IF NOT EXISTS db_tasks.tasks(
@@ -58,7 +58,7 @@ def add_task():
         conn.commit()
 
 
-conn = mysql.connect(host="localhost", user='root', password='Superpuff001!', database='db_tasks')
+conn = mysql.connect(host="localhost", user='root', password='', database='db_tasks')
 
 while True:
     show_menu()
